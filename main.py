@@ -9,7 +9,7 @@ ScreenHeight = 600
 pygame.display.set_caption("Pygame RPG")
 game_window = pygame.display.set_mode((ScreenWidth,ScreenHeight))
 
-
+# main loop
 while True:
 
     for event in pygame.event.get():
