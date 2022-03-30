@@ -12,5 +12,10 @@ game_window = pygame.display.set_mode((ScreenWidth,ScreenHeight))
 
 while True:
 
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
     pygame.display.flip()
     Clock.tick(60)
